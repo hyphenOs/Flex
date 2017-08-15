@@ -73,6 +73,7 @@ img {
 
 aside {
   background-color: @sidebar-bg;
+  background: linear-gradient(90deg, @hos-blue, @hos-green 70%, @hos-green);
   color: @sidebar-text-color;
   text-align: center;
 
@@ -109,7 +110,6 @@ aside {
         display: inline;
         line-height: 1.6em;
         font-size: 1.28em;
-        text-transform: lowercase;
       }
     }
   }
@@ -145,7 +145,11 @@ main {
   }
 
   article {
-    margin: 0 8% 2% 8%;
+    margin: 0 5% 2% 5%;
+
+    p {
+	text-align: justify;
+    }
 
     header {
       h1, h2 {
@@ -155,6 +159,7 @@ main {
       p {
         color: @header-text-color;
         font-size: 0.86em;
+	text-align: justify;
       }
     }
 
@@ -204,7 +209,7 @@ main {
     code {
       font-size: .8em;
       white-space: nowrap;
-      color: #c25;
+      color: @code-blue;
       padding: 1px 3px;
       background-color: #f7f7f9;
       border: 1px solid #e1e1e8;
@@ -421,7 +426,7 @@ ul.social {
 
 @media screen and (min-width: 768px) {
   aside {
-    width: 25%;
+    width: 20%;
     height: 100%;
     position: fixed;
     top: 0;
